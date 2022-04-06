@@ -31,28 +31,24 @@ variable "image_name" {
   description = "The name of the image for instances."
 }
 
-variable "fleet_subnets" {
+/* variable "fleet_subnets" {
   type        = list(string)
-  default     = null
   description = "A list of Subnet IDs for the Fleet. Example: [\"subnet-asdkjh2398732jk\", \"subnet-lkj890734jhb35\"]"
 }
 
 variable "fleet_security_groups" {
   type        = list(string)
-  default     = null
   description = "A list of Security Group IDs for the fleet. Example: [\"sg-kjh3465\", \"sg-567kjhk\"]"
-}
+} */
 
 variable "feedback_url" {
   type        = string
-  default     = null
-  description = "URL for feedback form."
+  description = "URL for feedback form. Use null to disable."
 }
 
 variable "redirect_url" {
   type        = string
-  default     = null
-  description = "URL to redirect users after logging out."
+  description = "URL to redirect users after logging out. Use null to disable."
 }
 
 variable "application_persistence" {
