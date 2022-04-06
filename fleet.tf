@@ -15,11 +15,10 @@ resource "aws_appstream_fleet" "fleet" {
   max_user_duration_in_seconds       = var.max_user_duration
   stream_view                        = var.stream_view
 
-
-  vpc_config {
+  /* vpc_config {
     subnet_ids         = var.fleet_subnets
     security_group_ids = var.fleet_security_groups
-  }
+  } */
 }
 
 resource "aws_appstream_fleet_stack_association" "stack_fleet" {
