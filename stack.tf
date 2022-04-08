@@ -9,7 +9,7 @@ resource "aws_appstream_stack" "stack" {
     connector_type = "HOMEFOLDERS"
   }
 
-  user_settings {
+  /* user_settings {
     action     = "CLIPBOARD_COPY_FROM_LOCAL_DEVICE"
     permission = var.copy_from
   }
@@ -29,6 +29,14 @@ resource "aws_appstream_stack" "stack" {
     action     = "PRINTING_TO_LOCAL_DEVICE"
     permission = var.local_print
   }
+  user_settings {
+    action     = "DOMAIN_PASSWORD_SIGNIN"
+    permission = var.domain_password
+  }
+  user_settings {
+    action     = "DOMAIN_SMART_CARD_SIGNIN"
+    permission = var.domain_smartcard
+  } */
 
   application_settings {
     enabled        = var.application_persistence
