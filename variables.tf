@@ -57,7 +57,7 @@ variable "application_persistence" {
   description = "Whether to enable application settings persistence between sessions."
 }
 
-variable "file_upload" {
+/* variable "file_upload" {
   type        = string
   default     = "DISABLED"
   description = "Whether to allow file uploads to the virtual instance."
@@ -86,6 +86,18 @@ variable "local_print" {
   default     = "DISABLED"
   description = "Whether to allow printing to local device."
 }
+
+variable "domain_password" {
+  type        = string
+  default     = "DISABLED"
+  description = "Whether to allow domain password signin."
+}
+
+variable "domain_smartcard" {
+  type        = string
+  default     = "DISABLED"
+  description = "Whether to allow domain smart card signin."
+} */
 
 variable "compute_capacity" {
   type        = number
